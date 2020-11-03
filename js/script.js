@@ -5,9 +5,9 @@ var delay = timerGeneral;
 var score = 0;
 var lives = 3;
 const doorsPerLevel = 15;
-const shotSound = new sound("../resources/shot.mp3");
-const moneySound = new sound("../resources/money.mp3");
-const killedSound = new sound("../resources/killed.mp3");
+const shotSound = new sound("resources/shot.mp3");
+const moneySound = new sound("resources/money.mp3");
+const killedSound = new sound("resources/killed.mp3");
 var doorsLeft = doorsPerLevel;
 var level = 1;
 // modes are: 0: intro, 1: game, 2: game over
@@ -586,7 +586,7 @@ function showGameoverScreen() {
   actorsStatus[1] = 0;
   paintActor(1,2);
   let imgDoorFrame = new Image();
-  imgDoorFrame.src = "../img/doorFrame.gif";
+  imgDoorFrame.src = "img/doorFrame.gif";
   context.drawImage( imgDoorFrame, doors[1].x - 13, doors[1].y - 15, 152, 228);
 }
 
@@ -626,35 +626,35 @@ var imgChargeEmpty = new Image();
 
 function preloader() {
 	if (document.images) {
-    imgBackground.src = "../img/imgBackground.gif";
-		imgDoor.src = "../img/door.gif";
-		imgDoorSemiOpen.src = "../img/doorSemiOpen.gif";
-		imgDoorSemiClosed.src = "../img/doorSemiClosed.gif";
-    imgLady.src = "../img/lady.gif";
-    imgLadyShot.src = "../img/ladyShot.gif";
-    imgLadyDead.src = "../img/ladyDead.gif";
-    imgSlowBandit.src = "../img/slowBandit.gif";
-    imgSlowBanditShot.src = "../img/slowBanditShot.gif";
-    imgSlowBanditDead.src = "../img/slowBanditDead.gif";
-    imgHatter.src = "../img/hatter.gif";
-    imgHatter31.src = "../img/hatter31.gif";
-    imgHatter32.src = "../img/hatter32.gif";
-    imgHatter33.src = "../img/hatter33.gif";
-    imgHatter34.src = "../img/hatter34.gif";
-    imgHatter35.src = "../img/hatter35.gif";
-    imgHatter36.src = "../img/hatter36.gif";
-    imgHatter37.src = "../img/hatter37.gif";
-    imgHatter38.src = "../img/hatter38.gif";
-    imgTallCustomer.src = "../img/tallCustomer.gif";
-    imgTallCustomerShot.src = "../img/tallCustomerShot.gif";
-    imgTallCustomerDead.src = "../img/tallCustomerDead.gif";
-    imgTallCustomerExchange1.src = "../img/tallCustomerExchange1.gif";
-    imgTallCustomerExchange2.src = "../img/tallCustomerExchange2.gif";
-    imgCharge1.src = "../img/imgCharge1.gif";
-    imgCharge2.src = "../img/imgCharge2.gif";
-    imgCharge3.src = "../img/imgCharge3.gif";
-    imgChargeDead.src = "../img/imgChargeDead.gif";
-    imgChargeEmpty.src = "../img/imgChargeEmpty.gif";
+    imgBackground.src = "img/imgBackground.gif";
+		imgDoor.src = "img/door.gif";
+		imgDoorSemiOpen.src = "img/doorSemiOpen.gif";
+		imgDoorSemiClosed.src = "img/doorSemiClosed.gif";
+    imgLady.src = "img/lady.gif";
+    imgLadyShot.src = "img/ladyShot.gif";
+    imgLadyDead.src = "img/ladyDead.gif";
+    imgSlowBandit.src = "img/slowBandit.gif";
+    imgSlowBanditShot.src = "img/slowBanditShot.gif";
+    imgSlowBanditDead.src = "img/slowBanditDead.gif";
+    imgHatter.src = "img/hatter.gif";
+    imgHatter31.src = "img/hatter31.gif";
+    imgHatter32.src = "img/hatter32.gif";
+    imgHatter33.src = "img/hatter33.gif";
+    imgHatter34.src = "img/hatter34.gif";
+    imgHatter35.src = "img/hatter35.gif";
+    imgHatter36.src = "img/hatter36.gif";
+    imgHatter37.src = "img/hatter37.gif";
+    imgHatter38.src = "img/hatter38.gif";
+    imgTallCustomer.src = "img/tallCustomer.gif";
+    imgTallCustomerShot.src = "img/tallCustomerShot.gif";
+    imgTallCustomerDead.src = "img/tallCustomerDead.gif";
+    imgTallCustomerExchange1.src = "img/tallCustomerExchange1.gif";
+    imgTallCustomerExchange2.src = "img/tallCustomerExchange2.gif";
+    imgCharge1.src = "img/imgCharge1.gif";
+    imgCharge2.src = "img/imgCharge2.gif";
+    imgCharge3.src = "img/imgCharge3.gif";
+    imgChargeDead.src = "img/imgChargeDead.gif";
+    imgChargeEmpty.src = "img/imgChargeEmpty.gif";
 
 	}
 }
